@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Playing with Flex and Grid</title>
+<meta charset="utf-8">
+<meta name="description" content="code to play with flexbox and grid">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* #wrapper { margin:0 auto; border: 1px solid red; display: grid; grid-template-columns: 155px auto; grid-template-rows: 100px auto; width: 850px; height: 900px;}
+header { background-color: yellow; width: 100%; grid-column-start: 1; grid-column-end: 3; grid-row-start:1; grid-row-end: 2; }
+nav { background-color: lightblue; }
+main { background-color: pink;} */
+
+#wrapper { margin:0 auto; 
+  border: 1px solid red; 
+  display: grid; 
+  /* grid-template-columns: 155px auto; 
+  grid-template-rows: 100px auto; 
+  grid-template-areas: 'header header' 'nav main';  */
+  width: 850px; height: 900px;}
+header { background-color: yellow; 
+  width: 100%; /* grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start:1; 
+  grid-row-end: 2; */ 
+  grid-area: header; }
+nav { background-color: lightblue; grid-area: nav;  }
+main { background-color: pink; grid-area: main;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+    </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms.html">Menu</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+    <section> 
+	  <h2>Heading of Section</h2>
+	  <p>Just a paragraph to represent the section inside main part of the page</p>
+    </section>
+    <footer>CNIT 132 - Flex and Grid</footer>
+  </main>
+</div>
+</body>
+</html>
+
+

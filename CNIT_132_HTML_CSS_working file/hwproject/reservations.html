@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pacific Trails Resort</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Pacific trails resort">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="pacific.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Pacific Trails Resort</h1>
+
+            <div id="nav">
+            <!-- need to apply strong here  -->
+                <ul class="strongsub">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="yurts.html">Yurts</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                <h2>Reservations</h2>
+
+                <form name="myForm" id="myForm" action="contact.php" method="get">
+                    <label for="firstName"> First Name: </label>
+                    <input type="text" placeholder="First Name" id="firstName" name="firstName"> <br><br>
+                    <label for="lastName"> Last Name: </label>
+                    <input type="text" placeholder="Last Name" id="lastName" name="lastName"> <br><br>
+                    <label for="emailadd">Email address: </label>
+                    <input type="email" id="emailadd" name="email"><br><br>
+                    <label for="telNumber">Telephone number: </label>
+                    <input type="number" id="telNumber" name="telNumber"><br><br>
+                    <label for="numGuest">Number of Guests: </label> 
+                    <select name="numGuest" id="numGuest">   
+                        <option>Select Number of Guest</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="morethanten">more than 10</option>
+                    </select>
+                    <br><br>        
+                    <label for="comments">Message / Suggestions: </label><textarea name="comments" id="comments" rows="5"></textarea>
+                    <br><br>
+
+                    <input type="submit" id="sub" value="Submit Your Reservation"> 
+                    <input type="reset" id="clear" value="Clear all form">
+                </form>
+                <div id="footer">
+                    <p>Copyright &copy; 2011 Pacific Trails Resort<br>
+                    webmaster name</p>
+                </div> <!--  closing id=footer -->
+            </div> <!--  closing id=content-->
+        </div> <!--  closing id=wrapper-->
+
+    </body>
+</html>

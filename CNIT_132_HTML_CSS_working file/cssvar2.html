@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="utf-8">
+<meta name="description" content="working with CSS variables specificity and inheritance">
+<title>CSS Variables</title>
+<style>
+/*define the variables*/
+:root { --color: blue; }
+body {--color:lime;}
+h1 { color: var(--color); }
+section { --color: green; color: var(--color); font-style: italic}
+#alert { --color: red; font-style: bold}
+ </style>
+ </head>
+ <body>
+<h1>CSS Variables</h1>
+<p>Can you understand the color of this paragraph?</p>
+<section>
+   <h2>Another color?</h2>
+   <p>What about the color for this paragraph inside this first section?</p>
+</section>
+
+<p> test</p>
+<h1> test2</h1>
+
+<section id='alert'>
+  <h2>Another section</h2>
+  <p>This section seems to have another color?!?</p>
+</section>
+</body>
+</html>

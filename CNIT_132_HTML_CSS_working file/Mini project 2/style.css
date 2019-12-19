@@ -1,0 +1,124 @@
+/**********************************************
+*** GENERAL styling
+**********************************************/
+
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: red ;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    text-align: right;
+    font-style: italic;
+}
+
+.ending {
+    font-size: 30px;
+}
+
+h3 {
+    color: red;
+    text-align: right;
+}
+
+p::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+span.highlight {
+    color: red;
+
+}
+
+/* a {
+    color:red;
+} */
+
+a:link {
+    color:red;
+}
+
+a:visited {
+    color:blue;
+}
+
+/* .firstletter{
+    initial-letter: 400%;
+} */
+
+table {
+    background-color: cyan;
+    border-spacing: 5px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: cyan_to_green;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes cyan_to_green {
+    from {
+        background-color: cyan;
+        color: black
+    }
+    to {
+        background-color: green;
+        color: white;
+    }
+}
+  
+/* Standard syntax */
+@keyframes cyan_to_green {
+    from {
+        background-color: cyan;
+        color: black
+    }
+    to {
+        background-color: green;
+        color: white;
+    }
+}
+
+td {
+    padding: 10px;
+}
+
+td.first_column {
+    text-align: center;
+    font-weight: bold;
+}
+
+div{
+  background-color: cyan;
+  text-align: center;
+  width: 120px;
+  position: relative;
+  -webkit-animation-name: banner; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate;
+  animation-name: banner;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes banner {
+    0%   {left: 0; top: 0;}
+    100%  {left: calc(100% - 120px); top: 0;}
+}
+
+/* Standard syntax */
+@keyframes banner {
+    0%   {left: 0; top: 0;}
+    100%  {left: calc(100% - 120px); top: 0;}
+}

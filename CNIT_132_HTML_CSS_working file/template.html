@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title Goes Here</title>
+<meta charset="utf-8">
+<style>
+   #content {
+      /* background-image: url(fall.jpg);  */
+      /* background-repeat: no-repeat;  */
+      position: relative;
+      /* opacity: 0.4; */
+   }
+   #content::before{ 
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      background:url('fall.jpg') no-repeat; 
+      opacity: 0.4;
+      z-index: -1;
+   }
+   /* h1 { 
+      background-color: white; 
+      opacity: 0.6; 
+   } */
+
+   #box {
+      /* background-color: red; */
+      height: 150px;
+      width: 150px;
+      font-size:3em;
+      /* opacity: 0.4; */
+      position:relative;
+   }
+
+   #box::before{
+      content:"";
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      background-color: red;
+      opacity: 0.4;
+      z-index: -1;
+   }
+
+</style>
+</head>
+
+<body>
+   <header id="content">
+      <h1>Fall Nature Hikes</h1>
+   </header>
+   <div id="box">
+      Box
+   </div>
+
+
+</body>
+</html>

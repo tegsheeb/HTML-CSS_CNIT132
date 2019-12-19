@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Playing with Flex and Grid</title>
+<meta charset="utf-8">
+<meta name="description" content="code to play with flexbox and grid">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#wrapper { margin:0 auto; 
+  border: 1px solid red; 
+  display: flex; 
+  width: 80%;
+  min-width: 850px; 
+  /* height: 900px;  */
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  /* flex-flow: row wrap;  */
+  /* align-content: flex-start; */ }
+header { background-color: yellow; 
+  width: 100%;
+}
+nav { background-color: lightblue; 
+/* flex-shrink: 0;  */
+/* order: 1; */ 
+/* flex-grow: 10; */
+}
+main { background-color: pink; 
+flex-grow: 1;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+    </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms.html">Menu</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <!-- <section> 
+    <h2> small heading </h2>
+  </section> -->
+  <main>
+    <section> 
+	  <h2>Heading of Section</h2>
+	  <p>Just a paragraph to repre Just a paragraph to represent the section inside main part of the page</p>
+    
+  </section>
+    <footer>CNIT 132 - Flex and Grid</footer>
+  </main>
+</div>
+</body>
+</html>
+
+

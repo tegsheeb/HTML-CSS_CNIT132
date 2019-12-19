@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lighthouse Island Bistro</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="twocolumn2nav.css"> -->
+    <style>
+        body {font-family:Verdana, Arial, sans-serif;
+            background-color: #00005D; }
+        
+        #wrapper { display: grid; 
+                   grid-template-areas: 'logo logo'
+        'menu right';
+            grid-gap: 5px;
+        grid-template-columns: 155px auto; 
+        /* background-color: #b3c7e6; */
+            background-color: lime;
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:850px; }
+        
+        header { grid-area: logo; 
+            background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px
+        }
+        
+        h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+        }    
+        
+        section { 
+            padding: 20px 20px 0 20px;
+        }
+        
+        #floatright { margin: 10px;
+             float: right;
+             text-align:center;
+    font-size:0.7rem;
+    font-style:italic;
+        }
+        
+        nav { grid-area: menu;
+            background-color: #b3c7e6; 
+        }
+        
+        nav ul { list-style-type: none; padding: 0; }
+nav a { text-decoration: none; display: block; width: 100%; }
+nav li { background-color: lightblue; color: blue; padding: 5px; border-radius: 5px; margin-top: 5px; }
+        
+        main { grid-area: right; 
+            background-color: #ffffff;
+               color: #000000;
+        }
+        
+        footer {font-size:70%;
+         text-align: center;
+         padding-bottom:20px;
+}
+    </style>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+    </header>
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms.html">Menu</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+    <section> 
+   <h2> My form</h2>
+   <form method = "post" action= "#" name='myform' id='form1'>
+       <label for="fname">First Name:</label> 
+       <input type='text' name='fname' id='fname' maxlength="15" placeholder="John" required> 
+       <br> <br>
+       what is your favorite type of browser?
+       <br>
+       <input type='radio' name='browser' id='ie' value='ie' > 
+       <label for='ie'>Internet explorer</label>
+       <br>
+       <input type='radio' name='browser' id='chrome' value='chrome' checked>    
+        <label for='ie'>Chrome</label>       <br>
+       <input type='radio' name='browser' id='safari' value='safari'> 
+       <label for='ie'>Safari</label>       <br>
+        <br><br>
+        <input type="textarea">
+        comments and suggestion
+
+        <br><br>
+
+        choose a car you like to drive
+        <label for='comments' id='comments'></label>
+        <input type='option'> 
+
+
+        <br>
+        <label for="dt"> Date you will arrive</label>
+        <input type='date' name='dt'>
+        <br>
+
+    </form>
+    </section>
+    <footer>Copyright &copy; 2012<br><span class="print">Fax #: 415-999-3322 &nbsp;&nbsp;&nbsp; Phone#: 415-999-3100</span>
+      </footer>
+  </main>
+</div>
+</body>
+</html>
+
+
